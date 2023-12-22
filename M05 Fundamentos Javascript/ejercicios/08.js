@@ -8,5 +8,6 @@ function esNumeroEntero(numero) {
   } else {
     return false;
   }
-}
+};
+
 module.exports = esNumeroEntero;
