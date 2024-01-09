@@ -3,11 +3,11 @@ function esFechaValida(fecha) {
   // Comprueba si este corresponde a una fecha válida.
   // Si es así, retorna true, sino retorna false.
   // Tu código:
-  if (fecha instanceof Date && !isNaN(fecha)) {
+ if (fecha instanceof Date && !isNaN(fecha.getTime())) {
     return true;
   } else {
     return false;
   }
 }
-console.log(new Date("2023-11-21"));
+console.log(esFechaValida("8888-03-28"));
 module.exports = esFechaValida;

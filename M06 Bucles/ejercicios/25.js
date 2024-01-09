@@ -5,6 +5,14 @@ function esPalindromo(string) {
   // IMPORTANTE: Un palíndromo es una palabra o frase
   // que se lee igual hacia adelante que hacia atrás.
   // Tu código:
+  var stringSinEspacios = string.replace(/ /g, '').toLowerCase();
+  var palabraAlReves = stringSinEspacios.split("").reverse().join("");
+    if (stringSinEspacios === palabraAlReves){
+    return true;
+  } else {
+    return false;
+  }
 }
 
+console.log(esPalindromo("La ruta nos aporto otro paso natural"));
 module.exports = esPalindromo;
