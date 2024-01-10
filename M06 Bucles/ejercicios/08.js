@@ -4,9 +4,9 @@ function esPositivoOInferiorA10(a) {
   // Retorna false en caso contrario.
   // Tu código:
   if (a >= 0 || a < 10) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
 }
 
