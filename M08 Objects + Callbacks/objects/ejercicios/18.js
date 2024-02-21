@@ -3,6 +3,14 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
   // Debes agregar el "nuevoAmigo" al final de este arreglo.
   // Retornar el objeto.
   // Tu código:
+  objetoUsuario.amigos.push(nuevoAmigo);
+  return objetoUsuario;
 }
 
+const miObj = {
+  nombre: "valen",
+  edad: 24,
+  amigos: ["Flor", "Meli", "Giuli"]
+}
+console.log(agregarAmigo(miObj, "Martu"));
 module.exports = agregarAmigo;

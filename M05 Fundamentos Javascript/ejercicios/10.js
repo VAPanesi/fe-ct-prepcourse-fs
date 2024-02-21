@@ -9,5 +9,5 @@ function esFechaValida(fecha) {
     return false;
   }
 }
-console.log(esFechaValida("8888-03-28"));
+console.log(esFechaValida(new Date("2012-28-05")));
 module.exports = esFechaValida;

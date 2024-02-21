@@ -3,9 +3,18 @@ function ordenarArray(array) {
   // Devuelve el arreglo resultante.
   // Tu código:
   //var arrayOrdenado = array.sort((a, b) => a - b);
-  if (array.sort((a, b) => a - b) || array.sort());
-  return array;
+  for (let i=0 ; i<array.length ; i++) {
+    if (isNaN(array[i])){
+      return array.sort();
+    } else if (!isNaN(array[i])){
+      return array.sort((a, b) => a - b);
+    }
+  }
+  if (array.length === 0) {
+    return array;
+  }
 }
 
-console.log(ordenarArray([200, 5, 8, 46, 120]));
+console.log(ordenarArray([]));
+console.log(ordenarArray(["hola", "banana", "cielo", "madre"]));
 module.exports = ordenarArray;

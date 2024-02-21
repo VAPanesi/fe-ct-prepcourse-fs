@@ -5,8 +5,9 @@ function productoEntreNúmeros(a, b) {
   let producto = 1;
   for (let i=a ; i <= b ; i++){
     producto *= i
+    console.log(`i: ${i} multi: ${producto}`);
   }
   return Math.abs(producto);
 }
-console.log(productoEntreNúmeros(1, 5));
+console.log(productoEntreNúmeros(-1, 5));
 module.exports = productoEntreNúmeros;

@@ -7,6 +7,8 @@ function esPalindromo(string) {
   // Tu código:
   var stringSinEspacios = string.replace(/ /g, '').toLowerCase();
   var palabraAlReves = stringSinEspacios.split("").reverse().join("");
+  console.log(stringSinEspacios);
+  console.log(palabraAlReves);
     if (stringSinEspacios === palabraAlReves){
     return true;
   } else {
@@ -14,5 +16,5 @@ function esPalindromo(string) {
   }
 }
 
-console.log(esPalindromo("La ruta nos aporto otro paso natural"));
+console.log(esPalindromo("hola todo bien"));
 module.exports = esPalindromo;
